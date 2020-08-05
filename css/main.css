@@ -1996,7 +1996,7 @@ nav a:hover {
 .single-project .content .content-overlay,
 .single-vol .content .content-overlay {
   background-image: -moz-linear-gradient(0deg, #f40f68 0%, #f86e3d 55%, #fbcd11 100%);
-  background-image: -webkit-linear-gradient(0deg, #424040 0%, #b95e5e 55%, #222222 100%);
+  background-image: -webkit-linear-gradient(0deg, #af4c44 0%, #b95e5e 55%, #000000 100%);
   background-image: -ms-linear-gradient(0deg, #f40f68 0%, #f86e3d 55%, #fbcd11 100%)
 }
 
@@ -2288,34 +2288,35 @@ nav a:hover {
 
 .single-project .content .content-overlay {
   position: absolute;
-  left: 5px ;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  left: 50px ;
+  top: 30px;
+  bottom: 30px;
+  right: 50px;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s
 }
 
+
 @media (max-width: 767px) {
   .single-project .content .content-overlay {
-      left: 20px;
-      width: 90%
+      
+      width: auto;
   }
 }
 
 @media (max-width: 414px) {
   .single-project .content .content-overlay {
-      left: 11px;
-      width: 94%
+      
+      width: auto;
   }
 }
 
 @media (max-width: 413px) {
   .single-project .content .content-overlay {
-      left: 0;
-      width: 100%
+      
+      width: auto;
   }
 }
 
@@ -2684,7 +2685,7 @@ body {
 /*footer - By Shubham Sharma - Do Not Remove - */
 
 .footer-area {
-  background: #bd3b29f6;
+  background-image:linear-gradient(to top,#1f1f1f,#1f1f1f,#a03729,#c44231);
   color: white;
   padding-top: 30px;
 }
@@ -2698,7 +2699,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
-  background: #423e3d;
+  background: #1f1f1f;
   text-align: center;
   text-align: -moz-center;
 }

@@ -187,6 +187,9 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
    
     <link rel="stylesheet" type="text/css" href="css/glider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -300,6 +303,10 @@
             
        
         }
+        .bd-placeholder-img:hover{
+            transform: scale(1.3) rotate(-0deg);
+        background-repeat: no-repeat;
+        }
         
 
         .logo {
@@ -308,6 +315,11 @@
 
         .toggle-nav {
             display: none;
+        }
+        @media screen and (max-width: 768px){
+          .col-md-7.h2{
+              text-align: center;
+          }  
         }
 
         @media screen and (max-width: 768px) {
@@ -358,6 +370,7 @@
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <script>
         $(document).ready(function() {
             $('.toggle-nav').css('cursor', 'pointer').click(function() {
@@ -374,6 +387,9 @@
             });
         });
     </script>
+   
+    
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    
@@ -407,40 +423,40 @@
         <ul>
             <li class="customnav">
                 <br>  <a href="/index.html">
-                      <font style="font-size:18px;font-weight: lighter; color:#1c87c9; font-family:Helvetica; "><b> Home </b></div>
+                      <font style="font-size:16px;font-weight: lighter; color:#1c87c9; font-family:Helvetica; "><b> Home </b></div>
                       </font>
                   </a>
               </li>
               <li class="customnav">
-                 <br> <a style="color: #d3d1d1;" class="active" href="/about.html">
-                      <font style="font-size:18px;  font-family:Helvetica; ">  About Us </div>
+                 <br> <a style="color: #d3d1d1; text-decoration: underline;" class="active" href="/about.html">
+                      <font style="font-size:16px;  font-family:Helvetica; ">  About Us </div>
                       </font>
                   </a>
               </li>
               <li class="customnav">
                   <br><a href="/project.html">
-                      <font style="font-size:18px; color:#e6e6e6;font-weight: lighter; font-family:Helvetica; "><b>  Impact </b></div>
+                      <font style="font-size:16px; color:#e6e6e6;font-weight: lighter; font-family:Helvetica; "><b>  Impact </b></div>
                       </font>
                   </a>
               </li>
               
               <li class="customnav">
                   <br><a href="/testimonials.html">
-                      <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Interns  </b></div>
+                      <font style="font-size:16px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Interns  </b></div>
                       </font>
                   </a>
               </li>
               
               <li class="customnav">
                   <br><a href="/join.html">
-                      <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Join Us  </b></div>
+                      <font style="font-size:16px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Join Us  </b></div>
                       </font>
                   </a>
               </li>
               
               <li class="customnav">
                   <br><a href="/donate.html">
-                      <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Donate </b></div>
+                      <font style="font-size:16px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Donate </b></div>
                       </font>
                   </a>
               </li>
@@ -476,17 +492,17 @@
         </ol>
         <div class="carousel-inner carousel-fade">
           <div class="carousel-item active">
-            <img class="bd-placeholder-img" width="100%" height="40%" src="/img/16 (1).jpg" alt="" class="src">
+            <img style="transition: transform 2s;margin-bottom: 0rem;" class="bd-placeholder-img" width="100%" height="40%" src="/img/16 (1).jpg" alt="" class="src">
             <div class="container">
             </div>
           </div>
           <div class="carousel-item">
-           <img  class="bdplaceholder-img" width="100%" height="40%" src="\img\12.jpg" alt="" class="src">
+           <img style="transition: transform 2s;margin-bottom: 0rem;" class="bd-placeholder-img" width="100%" height="40%" src="\img\12.jpg" alt="" class="src">
             <div class="container">
             </div>
           </div>
           <div class="carousel-item ">
-            <img class="bd-placeholder-img" width="100%" height="0%" src="\img\15 (2).jpg" alt="" class="src">
+            <img style="transition: transform 2s;margin-bottom: 0rem;" class="bd-placeholder-img" width="100%" height="0%" src="\img\15 (2).jpg" alt="" class="src">
             <div class="container">
             </div>
           </div>
@@ -501,8 +517,9 @@
         </a>
       </div>
 
-       <div class="class">
-      <div style="background-color: whitesmoke;" class="container marketing my-4">
+       <div style="
+      background-image: linear-gradient(to top, #fff0d1, #fdf9f4);" class="class">
+      <div  class="container marketing my-4">
 
         <!-- START THE FEATURETTES -->
     
@@ -510,9 +527,10 @@
     
         <div class="row featurette my-4">
           <div class="col-md-7 ">
-            <h2 style=" text-align: center; color: black; font-family: 'Times New Roman', Times, serif; font-weight: bolder;" class="featurette-heading my-4">About Sudaksh <span class="text-muted"></span></h2>
-            <p style="color: black;font-size: medium; font-weight: 400;" class="lead"The idea to start off Sudaksh, De nayi Pehchan (Non Government Organisation) by five community members - Mohit Bansal, Harish Gupta, Amit Kumar, Ram Narayan Sharma and Rajesh Sherawat. <br>The ideology behind to start the NGO to
-                give overall development to underprivileged children, special children, financially backward people and also the old - age people. <br>At the same time, NGO focused on environmental issues as well such as environmental health,
+            <h2 style=" text-align: left; color: rgb(23, 9, 104); font-family: 'Raleway', sans-serif; font-weight: bold; font-size: 28px;padding-left: 10px;" class="featurette-heading my-4">About Sudaksh <span class="text-muted"></span></h2>
+            <p style="color: rgb(82, 82, 82);font-size: medium; font-weight: 400;text-align:;padding-right: 50px; justify-content: start; text-align: start;padding-left: 10px;" class="lead"The idea to start off Sudaksh, De nayi Pehchan (Non Government Organisation) by five community members - Mohit Bansal, Harish Gupta, Amit Kumar, Ram Narayan Sharma and Rajesh Sherawat. <br>The ideology behind to start the NGO to
+                give overall development to underprivileged children, special children, financially backward people and also the old - age people. <br> <br>
+                At the same time, NGO focused on environmental issues as well such as environmental health,
                 waste segregation and insisting people to follow the same. <br>Sudaksh organised many programmes like distributing books, food, clothes and medicines, organizing free classes, health check ups and did street plays on various
                 social issues to aware the society.</p>
           </div>
@@ -525,8 +543,8 @@
     
         <div class="row featurette my-4">
           <div class="col-md-7 order-md-2 my-4">
-            <h2 style="text-align: center; padding-bottom: 10px; font-family: 'Times New Roman', Times, serif; font-weight: bolder;" class="featurette-heading">Go Green <span class="text-muted"></span></h2>
-            <p style="color: black;font-size: medium; font-weight: 400; padding-left: 10px;" class="lead">Habits we develop as children last a lifetime (unless of course one makes significant effort to change them). For example, if you made it a habit to read the newspaper every morning then without a doubt you will carry this habit to your deathbed. Likewise, if you developed an obnoxious habit as a child, it will take years to get rid of it. Now, how does a child develop a habit? Usually, children take up habits from elders or their role models because they look up to them. That's why as an elder it's necessary to inculcate habits that a younger one can adopt from you. How about we start with segregation of waste? Or use of cloth bags instead of plastic. We can impact lives. Let's start! </p>
+            <h2 style="text-align: left; padding-bottom: 10px;padding-left: 30px; color: rgb(23, 9, 104); font-family: 'Raleway', sans-serif; font-weight: bold; font-size: 28px;" class="featurette-heading">Go Green <span class="text-muted"></span></h2>
+            <p style="color: rgb(46, 46, 46);font-size: medium; font-weight: 400; padding-left: 30px;" class="lead">Habits we develop as children last a lifetime (unless of course one makes significant effort to change them). For example, if you made it a habit to read the newspaper every morning then without a doubt you will carry this habit to your deathbed. Likewise, if you developed an obnoxious habit as a child, it will take years to get rid of it. Now, how does a child develop a habit? Usually, children take up habits from elders or their role models because they look up to them. That's why as an elder it's necessary to inculcate habits that a younger one can adopt from you. How about we start with segregation of waste? Or use of cloth bags instead of plastic. We can impact lives. Let's start! </p>
           </div>
           <div class="col-md-5 order-md-1 my-4">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/img/1-compressor.jpg" alt="" class="src">
@@ -537,9 +555,9 @@
     
         <div class="row featurette my-4">
           <div class="col-md-7">
-            <h2 style="text-align: center; padding-bottom: 10px;font-family: 'Times New Roman', Times, serif; font-weight: bolder; " class="featurette-heading">Responsible Citizen <span class="text-muted"></span></h2>
-            <p style="color: black;font-size: medium; font-weight: 400;" class="lead">"अलग करो अलग करो; हरे नीले में फ़र्क करो"
-                "कपङे के थैले को उपयोग में लाएं; पन्नी को जङ से मिटाऐ" "साथी रे, हाथ से हाथ मिलाना; गंदगी को दूर है भगाना" These are the texts from the displayed banners raising awareness against plastic. These banners were the underrated mode of communication with our audience. A lot of people joined to watch the nukkad natak performances, in the first place, due to these banners. These were the necessary visual representations which helped the teams accumulate large crowds wherever they went. Hence, every little effort in the strife against plastic counts.</p>
+            <h2 style="text-align: left; padding-bottom: 10px;padding-left: 10px;color: rgb(23, 9, 104); font-family: 'Raleway', sans-serif; font-weight: bold; font-size: 28px; " class="featurette-heading">Responsible Citizen <span class="text-muted"></span></h2>
+            <p style="color: black;font-size: medium; font-weight: 400; padding-right: 50px; padding-left: 10px;" class="lead">"अलग करो अलग करो; हरे नीले में फ़र्क करो"
+                "कपङे के थैले को उपयोग में लाएं; पन्नी को जङ से मिटाऐ" "साथी रे, हाथ से हाथ मिलाना; गंदगी को दूर है भगाना" <br> <br> These are the texts from the displayed banners raising awareness against plastic. These banners were the underrated mode of communication with our audience. A lot of people joined to watch the nukkad natak performances, in the first place, due to these banners. These were the necessary visual representations which helped the teams accumulate large crowds wherever they went. Hence, every little effort in the strife against plastic counts.</p>
           </div>
           <div class="col-md-5 my-4">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/IMG_3651.jpg" alt="" class="src">
@@ -552,8 +570,8 @@
     
         <div class="row featurette my-4">
           <div class="col-md-7 order-md-2 my-4">
-            <h2 style="text-align: center; padding-bottom: 10px; font-family: 'Times New Roman', Times, serif; font-weight: bolder;" class="featurette-heading">Street Play <span class="text-muted"></span></h2>
-            <p style="color: black;font-size: medium; font-weight: 400;padding-;" class="lead">These pictures are from after the street play performances in Ratlam. Our team members approached children, foremostly, because they are the future of our nation and their facts and beliefs have to be set right. Apart from children, a team member can be seen keeping a biker on hold. The passerby has the cloth bag in his hand and he's closely examining it. Others around him are also curiously taking glances. The only purpose of our team for doing this was to spread awareness about single use plastic. Please use cloth bags, everyone. Save the Earth. </p>
+            <h2 style="text-align: left; padding-bottom: 10px;padding-left: 30px; color: rgb(23, 9, 104); font-family: 'Raleway', sans-serif; font-weight: bold; font-size: 28px;" class="featurette-heading">Street Play <span class="text-muted"></span></h2>
+            <p style="color: black;font-size: medium; font-weight: 400;padding-left: 30px;" class="lead">These pictures are from after the street play performances in Ratlam. Our team members approached children, foremostly, because they are the future of our nation and their facts and beliefs have to be set right. Apart from children, a team member can be seen keeping a biker on hold. The passerby has the cloth bag in his hand and he's closely examining it. Others around him are also curiously taking glances. The only purpose of our team for doing this was to spread awareness about single use plastic. Please use cloth bags, everyone. Save the Earth. </p>
           </div>
           <div class="col-md-5 order-md-1 my-4">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/img/about-img.jpg" alt="" class="src">
@@ -566,7 +584,7 @@
       </div>
     </div>
     
-   <br>
+   
     <footer class="footer-area">
         <div class="container">
             <div class="row text-left disclaimer d-none d-sm-block">

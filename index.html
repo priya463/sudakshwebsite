@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        
+
 
         .navbar.navbar-2 .navbar-toggler-icon {
         background-image: url('img/ham.png');
@@ -41,7 +41,7 @@
 
         .fa:hover {
             opacity: 0.7;
-            color: white;
+            color: rgb(243, 240, 240);
             font-size: 20px;
         }
 
@@ -187,6 +187,9 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
    
     <link rel="stylesheet" type="text/css" href="css/glider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -204,6 +207,10 @@
   font-size: 18px;
 
 	}
+    .logo:hover{
+        cursor: pointer;
+       transform: scale(1);
+    }
 	
 	.join-button:hover {
             opacity: 1;
@@ -287,29 +294,62 @@
             margin: 10px;
             padding: 15px 10px;
             padding-bottom: 30px;
-            color: white;
-            
-        }
-        .main-nav li a{
-            color: #e4f5f5;
-        }
-        
-        .main-nav a {
-            
-            text-decoration: none;
-            padding: 10px;
-            color: white;
-        }
-        .main-nav .active{
-            color: rgb(250, 244, 244);
         }
 
+        .main-nav a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: #080808;
+        }
+         a.active{
+            color: #ffffff;
+            
+       
+        }
+        
+        .d-block{
+            opacity: 1;  
+            filter: grayscale(0.8);
+             transition: transform 3s; 
+            } 
+        .d-block:hover{      
+            opacity: 1;   
+            filter: grayscale(0);
+            transform: scale(1.3) rotate(-0deg);
+        }
+        
+        
+        black-overlay{
+            z-index: 200;
+            opacity: 0;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        
         .logo {
             color: #fff;
         }
 
         .toggle-nav {
             display: none;
+        }
+        
+        @media screen and (max-width: 768px){
+          .col-md-7.h2{
+              text-align: center;
+          }  
         }
 
         @media screen and (max-width: 768px) {
@@ -358,8 +398,12 @@
             }
         }
     </style>
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <script>
         $(document).ready(function() {
             $('.toggle-nav').css('cursor', 'pointer').click(function() {
@@ -376,7 +420,13 @@
             });
         });
     </script>
+    
+    
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
    
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="css/versions.css"> -->
@@ -388,11 +438,11 @@
 
 <body class="host_version">
     
-    <nav class="main-nav" style=" height:70px; background:#bd3b29f6; position:fixed; z-index: 1;">
+    <nav class="main-nav" style=" height:70px; background: #bd3b29f6; position:fixed; top: 0; z-index: 2;">
         
 
 
-        <div class="logo"><div style="margin-top: 32px"> <img src="img/sudaksh-logo.png">
+        <div class="logo"><div style="margin-top: 32px;padding-left: 30px;"> <img style="width: 90px;height: 70px;" src="img/logo2.jpg">
 </div>
 
 
@@ -403,49 +453,50 @@
 
             <div class="topmargin"></div>
             <div class="topmargin"></div>
-            <div class="toggle-nav"><i class="fa fa-bars" style="color:rgb(14, 13, 13)"></i></div>
+            <div class="toggle-nav"><i class="fa fa-bars" style="color:black"></i></div>
         </div>
-        <ul>
-            <li class="customnav active">
-              <br>  <a class="active" href="/index.html">
-                    <font style="font-size:18px; color:#d3d1d1; font-family:Helvetica; "> Home </div>
-                    </font>
-                </a>
-            </li>
+        <ul style="padding-left: 90px;padding-right: 30px;">
             <li class="customnav">
-               <br> <a href="/about.html">
-                    <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  About Us </b></div>
-                    </font>
-                </a>
-            </li>
-            <li class="customnav">
-                <br><a href="/project.html">
-                    <font style="font-size:18px; color:#e6e6e6;font-weight: lighter; font-family:Helvetica; "><b>  Impact </b></div>
-                    </font>
-                </a>
-            </li>
-            <li class="customnav">
-                <br><a href="/testimonials.html">
-                    <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Interns  </b></div>
-                    </font>
-                </a>
-            </li>
-			
-			<li class="customnav">
-                <br><a href="/join.html">
-                    <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Join Us  </b></div>
-                    </font>
-                </a>
-            </li>
-			
-            <li class="customnav">
-                <br><a href="/donate.html">
-                    <font style="font-size:18px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Donate </b></div>
-                    </font>
-                </a>
-            </li>
-        </ul>
-        <div class="scial_icon">
+                <br>  <a style="color: #cecdcd; text-decoration: underline;" class="active"href="/index.html">
+                      <font style="font-size:16px;font-weight: lighter;  font-family:Helvetica; "> Home </div>
+                      </font>
+                  </a>
+              </li>
+              <li class="customnav">
+                 <br> <a  href="/about.html">
+                      <font style="font-size:16px;color:#1c87c9;font-weight: lighter;  font-family:Helvetica; ">  <b> About Us</b> </div>
+                      </font>
+                  </a>
+              </li>
+              <li class="customnav">
+                  <br><a href="/project.html">
+                      <font style="font-size:16px; color:#e6e6e6;font-weight: lighter; font-family:Helvetica; "><b>  Impact </b></div>
+                      </font>
+                  </a>
+              </li>
+              
+              <li class="customnav">
+                  <br><a href="/testimonials.html">
+                      <font style="font-size:16px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Interns  </b></div>
+                      </font>
+                  </a>
+              </li>
+              
+              <li class="customnav">
+                  <br><a href="/join.html">
+                      <font style="font-size:16px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Join Us  </b></div>
+                      </font>
+                  </a>
+              </li>
+              
+              <li class="customnav">
+                  <br><a href="/donate.html">
+                      <font style="font-size:16px; color:#1c87c9;font-weight: lighter; font-family:Helvetica; "><b>  Donate </b></div>
+                      </font>
+                  </a>
+              </li>
+          </ul>
+        <div  class="scial_icon">
             <ul>
                 <li><span> <ul><a href="https://m.facebook.com/profile.php?id=136378083692647&ref=content_filter" class="fa fa-facebook" title="Facebook" target="_blank"></a> <a href="https://instagram.com/sudakshdenayipehchan?igshid=1gcspwxb98kv0" class="fa fa-instagram" title="Instagram" target="_blank"></a> <a href="https://twitter.com/SudakshN" class="fa fa-twitter" title="Twitter" target="_blank"></a> <a href="https://www.linkedin.com/company/sudaksh" class="fa fa-linkedin" title="Linkedin" target="_blank"></a> <a href="#contact" class="fa fa-phone" title="Contact us"></a></ul> </span></a>
                 </li>
@@ -456,523 +507,213 @@
     
     <div class="navigation"> <br><br><br>
         <header class="default-header">
-            <div class="container" style="height: 70px; background-color: #bd3b29f6;">              
-                <div class="header-top d-flex justify-content-between align-items-center">
-                    <div class="logotwo"> <img src="img/sudaksh-logo.png" style="margin-top: 10px"> </div>
-                    <div class="main-menubar d-flex align-items-center"  style="margin-top: 10px">
-                        <nav class="hide"> <a href="/index.html">Home</a> <a href="/about.html">About</a> <a href="/project.html">Impact</a> <a href="/testimonials.html">Interns</a>  <a href="/join.html">Join Us</a> <a href="/donate.html">Donate</a> </nav>
-                        <div class="menu-bar"><img src="img/ham.png"></span></div>
+            <div class="container" style="height: 70px; background-color: #bd3b29f6; z-index: 0;">              
+                    <div class="header-top d-flex justify-content-between align-items-center">
+                        <div class="logotwo"> <img style="width: 80px; padding-top: 2px;" src="img/logo2.jpg" style="margin-top: 10px"> </div>
+                        <div class="main-menubar d-flex align-items-center"  style="margin-top: 10px">
+                            <nav class="hide"> <a href="/index.html">Home</a> <a href="/about.html">About</a> <a href="/project.html">Impact</a> <a href="/testimonials.html">Interns</a>  <a href="/join.html">Join Us</a> <a href="/donate.html">Donate</a> </nav>
+                            <div class="menu-bar"><img src="img/ham.png"></span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
     </div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
-    <div class="example"> </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner1 ">
-            <div class="carousel-item active"> <img class="d-block w-100" src="img/carousel/9.jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block"> </div>
-            </div>
-            <div class="carousel-item"> <img class="d-block w-100" src="img/carousel/8.jpeg" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block"> </div>
-            </div>
-            <div class="carousel-item"> <img class="d-block w-100" src="img/carousel/13.jpeg" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block"> </div>
-            </div>
-        </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next"
-            href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
     
-	
-	<section class="about-area" id="about" style:"background-image: linear-gradient(to bottom right, red, yellow);">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-end align-items-center contain-bound" >
-                <div class="col-lg-6 col-md-12 about-right no-padding">
-                    <div class="mrgin"> <img class="img-fluid" src="img/about-img.jpg" alt="" style="margin-top: 17px; margin-bottom: 17px; margin-right: 0px; margin-left: 10px;"> </div>
-                </div>
-                <div class="col-lg-6 col-md-12 about-right" >
-                    <h1>
-                        <font color="white"><div  style="margin-left: 5px; "> About Us</div> </font>
-                    </h1>
-                    <p>
-                        <font color="white" style="font-size:17.5px;" align="justify" > <div class="aboutjustify" style="margin-left: 5px; margin-bottom: -15px;">The idea to start off Sudaksh, De nayi Pehchan (Non Government Organisation) by five community members - Mohit Bansal, Harish Gupta, Amit Kumar, Ram Narayan Sharma and Rajesh Sherawat. <br>The ideology behind to start the NGO to
-                            give overall development to underprivileged children, special children, financially backward people and also the old - age people. <br>At the same time, NGO focused on environmental issues as well such as environmental health,
-                            waste segregation and insisting people to follow the same. <br>Sudaksh organised many programmes like distributing books, food, clothes and medicines, organizing free classes, health check ups and did street plays on various
-                            social issues to aware the society.</div> </font>
-                    </p>
-                    <ul>
-                        <li><span> <ul> <a href="https://m.facebook.com/profile.php?id=136378083692647&ref=content_filter" class="fa fa-facebook" title="Facebook" target="_blank"></a> <a href="https://instagram.com/sudakshdenayipehchan?igshid=1gcspwxb98kv0" class="fa fa-instagram" title="Instagram"></a> <a href="https://twitter.com/SudakshN" class="fa fa-twitter" title="Twitter" target="_blank"></a> <a href="https://www.linkedin.com/company/sudaksh" class="fa fa-linkedin" title="Linkedin" target="_blank"></a> <a href="#contact" class="fa fa-phone" title="Contact" target=""></a> </ul> </span></a>
-                        </li>
-                    </ul>
-                </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            
+          <div class="carousel-item active" data-interval="1000">
+               <img src="img/carousel/9.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+              
+         </div> 
+        
+          <div class="carousel-item" data-interval="1000">
+            
+            <img src="img/carousel/8.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            
+            </div> 
+          <div class="carousel-item">
+            
+            <img src="img/carousel/13.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            
             </div>
         </div>
-    </section>
-    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-    <section class="project-area section-gap" id="project" style=" padding-bottom: 60px; padding-top: 60px;  background-image: url(img/impact_bg.jpg
-    ); background-size:100% ; ">
-        <h2 align="center"> Our Impact</h2>
-        <hr align="center" width=70% height=5px color=black> <br><br>
-           <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-6 col-md-6 project-wrap mb-4">
-                    <div class="single-project">
-                        <div class="content"> 
-                            <a target="_blank">
-                                <div class="content-overlay"></div><img class="content-image img-fluid d-block mx-auto" src="img/Img1-compressor.jpg" alt="">
-                                <div class="content-details fadeIn-bottom">
-                                    <a data-toggle="modal" href="#education" class="head-btn btn text-uppercase">
-                                        <div class="card" style="background-color: transparent; border: 0px; padding: 0;"></div>Read More </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 project-wrap mb-4">
-                    <div class="single-project">
-                        <div class="content">
-                            <a target="_blank">
-                                <div class="content-overlay"></div><img class="content-image img-fluid d-block mx-auto" src="img/1-compressor.jpg" alt="">
-                                <div class="content-details fadeIn-bottom">
-                                    <a data-toggle="modal" href="#enviornment" class="head-btn btn text-uppercase">
-                                        <div class="card" style="background-color: transparent; border: 0px; padding: 0;"></div>Read More </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-12 impactslogan d-none d-md-block"> SUDAKSH : De Nayi Pehchan </div>-->
-                <div class="col-lg-6 col-md-6 project-wrap mb-4">
-                    <div class="single-project">
-                        <div class="content">
-                            <a target="_blank">
-                                <div class="content-overlay"></div><img class="content-image img-fluid d-block mx-auto" src="img/2-compressor.png" alt="">
-                                <div class="content-details fadeIn-bottom">
-                                    <a data-toggle="modal" href="#water" class="head-btn btn text-uppercase">
-                                        <div class="card" style="background-color: transparent; border: 0px; padding: 0;"></div>Read More </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 project-wrap mb-4">
-                    <div class="single-project">
-                        <div class="content">
-                            <a target="_blank">
-                                <div class="content-overlay"></div><img class="content-image img-fluid d-block mx-auto" src="img/3-compressor.png" alt="">
-                                <div class="content-details fadeIn-bottom">
-                                    <a data-toggle="modal" href="#health" class="head-btn btn text-uppercase">
-                                        <div class="card" style="background-color: transparent; border: 0px; padding: 0;"></div>Read More </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <section style="background-image: linear-gradient(to right,#f7d6b3,#fffcf5,#f5c392);">
+          <div class="class">
+         <div style="text-align: center; padding-top: 50px; padding-bottom: 30px;" class="">
+        <div  class="row">
+            <div class="col-lg-4">
+             
+              
+              <p> <img style="width: 180px;height: 200px;" src="/img/green.png" alt="" class="src"></p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illo omnis reprehenderit qui modi! Distinctio aut illum rerum blanditiis numquam labore, unde dolor voluptatum, expedita atque hic illo, reiciendis ratione?</p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              
+              
+              <p><img style="width: 180px;height: 200px;" src="/img/aware.png" alt="" class="src"></p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illo omnis reprehenderit qui modi! Distinctio aut illum rerum blanditiis numquam labore, unde dolor voluptatum, expedita atque hic illo, reiciendis ratione?</p>
+              
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              
+              
+              <p><img style="width: 180px;height: 200px;" src="/img/health.png" alt="" class="src"></p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illo omnis reprehenderit qui modi! Distinctio aut illum rerum blanditiis numquam labore, unde dolor voluptatum, expedita atque hic illo, reiciendis ratione?</p>
+             
+            </div><!-- /.col-lg-4 -->
+          </div>
+     
+        
+           
+          </div>      
+      
+      <header class="w3-container w3-center w3-padding-32"> 
+        <h1 style="color: black; font-family: 'Times New Roman', Times, serif;">Our campaign</h1>
+        <p style="font-size: 20px;">Who We Are <span class="w3-tag"></span></p>
+      </header>
+      
+      <!-- Grid -->
+      <div class="w3-row">
+      
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="/img/about-img.jpg" alt="Nature" style="width:100%">
+          <div class="w3-container">
+            <h3><b>TITLE HEADING</b></h3>
+            <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+          </div>
+      
+          <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+              tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="modal fade" id="education" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto " src="img/Img1-compressor.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px">Education</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p>The organisation has addressed several issues such as child rights, importance of sex education, menstrual hygiene, sex related taboos prevailing in our society, need for gender sensitisation. Sudakh has conducted no.
-                                        awareness programmes in various schools of Uttarpradesh, focussing on menstrual hygiene whereby it has mentioned some facts that providing education about menstrual hygiene to women and girls will make them feel
-                                        more comfortable and also educating males about menstruation will make it a more comfortable topic to discuss. Sudaksh has conducted several sessions at schools in rural areas of Uttarpradesh to make children understand
-                                        what child abuse is, what sex education is, how it impacts children and how parents and schools can be urged to make sex education a regular class in schools. The organisation has worked over facilitating a comprehensive
-                                        and common understanding about gender equality and making people aware about the importance of it for the development of Society. It focuses on the fact that Gender equality and women’s empowerment can only be brought
-                                        about by changing the mind-set of people and breaking the societal norms to involve men in the process.</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <hr>
+      
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+        <img height="290px" src="/img/donate.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container">
+            <h3><b>BLOG ENTRY</b></h3>
+            <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+          </div>
+      
+          <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+              tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="modal fade" id="enviornment" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto " src="img/1-compressor.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px">Enviornment</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p>Air pollution, water pollution, garbage domestically prohibited goods and pollution of the natural environment are all major challenges for India. Sudaksh has initiated it's drive for this and people who are part of
-                                        this impart environmental education and education through camps for teachers and students and conduct surveys on environment in villages of Uttarpradesh and Madhya Pradesh; they have made handmade dustbins in a
-                                        locality of Madhya Pradesh to spread awareness on importance of cleanliness, had distributed cloth bags to people living in those villages and also they've conducted awareness programmes on the infectious diseases
-                                        caused from unclean surroundings. Public interaction has played an integral role every time.The NGO has addressed the importance of waste segregation and making them know about the difference that exists between
-                                        the two(green and blue) dustbins and how people could practice waste segregation at their own level. The NGO has also given its contribution in parks restoration and also promoted public to participate.</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- END BLOG ENTRIES -->
+      </div>
+      
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-card w3-margin w3-margin-top">
+        <img src="/img/53a4ec2e-b689-47fe-a7e6-43a4add100cb.jpg" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4><b>My Name</b></h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </div><hr>
+        
+        <!-- Posts -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Popular Posts</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="/img/IMG_3291.HEIC" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span><br>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="/img/20191224_174558.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </li> 
+            <li class="w3-padding-16">
+              <img src="/img/20200111_165747.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Dorum</span><br>
+              <span>Ultricies congue</span>
+            </li>   
+            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+              <img src="/img/20d949bd-15ee-4adf-8552-424ccc81c79b.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Mingsum</span><br>
+              <span>Lorem ipsum dipsum</span>
+            </li>  
+          </ul>
         </div>
-        <div class="modal fade" id="water" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto" src="img/2-compressor.png"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px">Water</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p>while water is a sustainable resource, it's in the meantime a limited resource. Water is essential forever for life. Sudaksh de nayi Pehchaan has undertaken considerable grassroot level work towards water conservation
-                                        and management in both rural and urban scenario. It has conducted several awareness programs in Uttar Pradesh, Madhya Pradesh, Delhi. Mass awareness is being spread by the organisation through various nukkad natak
-                                        and awareness drives on water conservation and management with the active involvement of the public. Here the public interaction plays the vital role as to know about their current problems they're facing related
-                                        to water depletion. As with all countries with excess water consumption depletes the overall water table. Rain water harvesting could be one solution for water collection. Collected water can be immediately used
-                                        for agriculture, and with improved filtration practices to reduce water-borne pathogens, also quickly available for human consumption. The organization time to time carries out research and studies on the existence
-                                        of the historical water bodies. The same time, the water bodies which have been enroached are saved through raising awareness amongst the local community.</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <hr> 
+       
+        <!-- Labels / tags -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Tags</h4>
+          </div>
+          <div class="w3-container w3-white">
+          <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+          </p>
+          </div>
         </div>
-        <div class="modal fade" id="health" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto" src="img/3-compressor.png"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px">Health</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p>In India, some of the best healthcare in the world is delivered through the private sector. Lack of hospitals, missing doctors, ill-equipped health professionals, and paucity of funds have dogged the Indian health sector
-                                        for decades. Each year nearly 40 million Indians are thrown into poverty because of out of pocket health spending. Sudaksh has undertaken its initiative for getting these disparities removed. It has conducted some
-                                        healthcare activities and public awareness programmes in rural areas of Uttar Pradesh, Madhya Pradesh; in these programmes the free medicines, face masks were distributed among the people living there. Awareness
-                                        programmes have been conducted to present some facts like diarrheal diseases are the primary causes of early childhood mortality, these diseases can be attributed to poor sanitation and inadequate safe drinking
-                                        water. India has the world's highest incidence of rabies.The primary focus of the organisation is to fulfil the basic health and social needs of underprivileged sections of the society like poor, women, elderly,
-                                        children etc. Sudaksh is continuously scouting the people living here and even providing them with the basic healthcare treatments and medicines.</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-    <section class="about-area" id="about">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-end align-items-center contain-bound">
-                <div class="col-lg-6 col-md-12 about-right no-padding">
-                    <div class="mrgin2"> <img class="img-fluid" src="img/our-aim.jpg" alt="" style="margin-top: 37px; margin-bottom: 37px; margin-right:30px; margin-left: 20px;"> </div>
-                </div>
-                <div class="col-lg-6 col-md-12 about-right">
-                    <h1>
-                        <font color="white"> <div>Our Aim</div> </font>
-                    </h1>
-                    <p>
-                        <font color="white" style="font-size:20px" >  <div class="aboutjustify" >Our only aim is to develop underprivileged society, so they can come forward, and to help old people so they can live with self confidence, and at the same time to help nature heeling so we can secure our future..</div> </font>
-                    </p>
-                    <ul>
-                        <li><span> <ul> <a href="https://m.facebook.com/profile.php?id=136378083692647&ref=content_filter" class="fa fa-facebook" title="Facebook" target="_blank"></a> <a href="https://instagram.com/sudakshdenayipehchan?igshid=1gcspwxb98kv0" class="fa fa-instagram" title="Instagram"></a> <a href="https://twitter.com/SudakshN" class="fa fa-twitter" title="Twitter" target="_blank"></a> <a href="https://www.linkedin.com/company/sudaksh" class="fa fa-linkedin" title="Linkedin" target="_blank"></a> <a href="#contact" class="fa fa-phone" title="Contact" target=""></a></ul> </span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="donate-area relative section-gap" id="donate">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6 col-sm-12 pb-80 header-text" style="padding-bottom:20px">
-                    <h1 style="margin-bottom:0px">
-                        <font color=#b7d82c>Donate Now</font>
-                    </h1>
-                    <font color=#b7d82c>
-                        <p> Donate now to support the cause </p>
-                    </font>
-                </div><br><br><br><br>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6 contact-right">
-                    <div class="single-info">
-                        <h4>
-                            <font style="color:yellow">Donate with love</font>
-                        </h4>
-                        <font style="color: white">
-                            <p>Donating to charity organization is a noble thing. What makes it sacred is that the left hand does not know what the right hand gives.</p>
-                        </font>
-                    </div>
-                    <div class="single-info">
-                        <h4>
-                            <font style="color:yellow">Become Lifesaver</font>
-                        </h4>
-                        <font style="color: white">
-                            <p>To the world you may be one person, but to one person you may be the world.</p>
-                        </font>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-6 contact-left">
-                    <div class="row">
-                        <div class="col-lg-12 d-flex flex-column"> <u style="color: #b7d82c"> <h3 style="color: #b7d82c">Account Details</h3> </u> </div>
-                        <div class="col-lg-12 d-flex flex-column">
-                            <p style="color: #7bc17e">Bank Name &nbsp :
-                                <font style="color: #e4f5f5">State Bank of India</font>
-                            </p>
-                        </div>
-                        <div class="col-lg-12 d-flex flex-column">
-                            <p style="color: #7bc17e">Account No.  :
-                                <font style="color: #e4f5f5">37477347505</font>
-                            </p>
-                        </div>
-                        <div class="col-lg-12 d-flex flex-column">
-                            <p style="color: #7bc17e">Branch &nbsp &nbsp &nbsp &nbsp &nbsp:
-                                <font style="color: #e4f5f5"> Roshan Mandi, Najafagarh, Delhi-110043</p>
-                        </div>
-                        <div class="col-lg-12 d-flex flex-column">
-                            <p style="color: #7bc17e">Name &nbsp &nbsp &nbsp &nbsp &nbsp :
-                                <font style="color: #e4f5f5"> Sudaksh</p>
-                        </div>
-                        <div class="col-lg-12 d-flex flex-column">
-                            <p style="color: #7bc17e">IFSC Code &nbsp &nbsp:
-                                <font style="color: #e4f5f5"> SBIN0032691</p>
-                        </div>
-                        <div class="col-lg-12 d-flex flex-column">
-                            <p style="color: #7bc17e">MICR Code &nbsp :
-                                <font style="color: #e4f5f5"> 110002844</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <section class="testimonial-area" id="testimonial">
-        <!-- <div class="container-fluid" style="background-image: url('img/internbg.jpg'); background-repeat : no-repeat; background-size : 100% 100% "> -->
-    
-			  <div class="container-fluid" style="background-image: url('img/intern_bg.png');background-size:100% 100% ;">
-            <h1 class="text-center mb-3">
-                <font color=black><br>Interns Speak<br></font>
-            </h1>
-            <div class="glider-contain">
-                <div class="glider">
-                    <div class="gliderItems">
-                        <a data-toggle="modal" href="#intern1">
-                            <div class="card" style="background-color: transparent; border: 0px; "> <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i1.jpg" alt="Card image cap" style="margin: 0 auto;">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Heena</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gliderItems">
-                        <a data-toggle="modal" href="#intern2">
-                            <div class="card" style="background-color: transparent; border: 0px; "> <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i2.jpg" alt="Card image cap" style="margin: 0 auto;">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Prakrat</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gliderItems">
-                        <a data-toggle="modal" href="#intern3">
-                            <div class="card" style="background-color: transparent; border: 0px; "> <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i3.jpg" alt="Card image cap" style="margin: 0 auto;">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Pragya</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gliderItems">
-                        <a data-toggle="modal" href="#intern4">
-                            <div class="card" style="background-color: transparent; border: 0px; "> <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i4.jpg" alt="Card image cap" style="margin: 0 auto;">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Yogendar </h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="gliderItems">
-                        <a data-toggle="modal" href="#intern5">
-                            <div class="card" style="background-color: transparent; border: 0px; "> <img class="card-img-top img-fluid responsive imagedropshadow" src="img/intern/i5.jpg" alt="Card image cap" style="margin: 0 auto;">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center" style="font-family: 'Caveat', cursive; font-size:30px">Anusha</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div><button aria-label="Previous" class="glider-prev">«</button> <button aria-label="Next" class="glider-next">»</button>
-                <div id="dots"></div>
-            </div>
-        </div>
-        <div class="modal fade" id="intern1" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto imagedropshadow intern-width" src="img/intern/i1.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px; color:black">Heena</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p style="color:black">Hey everyone. I did my internship with Sudaksh organization in December'2019. My experience is 10/10. I wasn't expecting this to an internship but this happened; be it traveling, be it food, be it the place we were
-                                        residing, everything was so damn good! Talking about when we were going to public interactions, nukad naatak, plastic rallies, restoration of the parks and telling the people what is the difference that exists between
-                                        the two dustbins, it was a difficult task, but when it is about to team it's nothing difficult. There's a difference between all time work in work and play in play but what I learnt in this internship is that work
-                                        and play exist together. Thank you so much Sudaksh organization. Everyone winning for the opportunity, do grab it, don't loose it, you'll regret it; and I give two big thumbs up to this organization, thank you so
-                                        much.</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="intern2" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto imagedropshadow intern-width" src="img/intern/i2.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px; color:black">Prakrat</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p style="color:black">Hi this is Prakrat Gupta . I was involved in the internship project of Swachta Sarvekshan 2020 with Sudaksh organisation. My over all experience working with Municipal Corporation of Malhargarh was fantastic. We were
-                                        involved in a number of activities right from awareness drives campaigns on a variety of issues , remodelling public behaviour through plastic rallies , best out of wastes etc. It gave us an insight into dynamics
-                                        of local level policy implementation and how the masses do collaborate with administration in keeping their surroundings clean. Food, travel and accommodation was all upto the mark and it gave us an opportunity
-                                        of collaborating with civic agencies. But surely this made me realise that civil society involvement with government can strengthen the roots of local self government in our country. Thanks Sudaksh for this wonderful
-                                        opportunity !!!</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="intern3" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto imagedropshadow intern-width" src="img/intern/i3.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px; color:black">Pragya</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p style="color:black">I remember keeping mum on the first day of the journey as clearly as I remember living some of my best moments throughout the internship. I was interning with Sudaksh, not for profit organisations, in December 2019.
-                                        That was my first internship. And, albeit, I haven't had any other internships yet but I can bet that none can really compare to this one! Our team leader struck a fine balance between work and fun for us. We were
-                                        very connected as a team. We respected the word of our team leader and another senior in our team. And it'd be unnecessary to jot down in length about my internship experience but I'd only add this that the internship
-                                        has been one of the most fun learning team activities I've had and I absolutely cherish it </p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="intern4" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto imagedropshadow intern-width" src="img/intern/i4.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px; color:black">Yogendar</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p style="color:black"> Hi there ! Being part of Sudaksh feel like that you are actually doing something for your society , something which your adulthood owes to the nation . I take immense pleasure to be part of such an organisation. I encourage
-                                        others to come forward and do a bit for the nation that’s even our duty ! </p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="intern5" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center"> <img class="content-image img-fluid s-block mx-auto imagedropshadow intern-width" src="img/intern/i5.jpg"> </div>
-                            <div class="row-12 text-center"><br>
-                                <h3 style="font-family: 'Caveat', cursive; font-size:30px; color:black">Anusha</h3><br></div>
-                            <div class="col-12 text-justify">
-                                <h5 style="font-family: 'Patrick Hand', cursive;">
-                                    <p style="color:black">My experience with Sudaksh was a great one. Working with a new team which became like a family by the end of the internship, learning new things, interacting with people, innovating things, rallies, nukkad nataks and
-                                        a lot of creative things is what we did on the project! Going on field is always an overwhelming experience and each time one gets to know new lessons and experience new things, irrespective of the number of times
-                                        one has been there, and this internship gave me a chance to do so! It was indeed a fun and enriching experience for me!</p>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	
-	
-	
-	
-	
-	
-	<section class="donate-area relative section-gap" id="joinUs">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6 col-sm-12 pb-80 header-text" style="padding-bottom:10px">
-                    <h1 style="margin-bottom:0px">
-                        <font color=#b7d82c>Work with us...</font>
-                    </h1>
-                    
-                </div><br><br><br><br></div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-12 ">
-                    <div class="single-info">
-                        <h4>
-                            <font style="color:yellow">JOIN US TO BE PART OF A MOVEMENT FOR CHANGE.</font>
-                        </h4>
-                        <font style="color: white">
-                            <p>By being part of a world where we won’t rest until there is equality for all. There are a number of ways you ca show your support:</p>
-                        </font>
-                    </div>
-                    <div class="single-info">
-                        <h4>
-                            <font style="color:yellow">BECOME A MEMBER</font>
-                        </h4>
-                        <font style="color: white">
-                            <p>Our members are what Sudaksh is made of. They are central to our work, our voice, our influence —the powerhouse behind everything we do.</p>
-							<p>They use their skills, creativity, voices and connections to raise awareness about inequality and raise funds to continue our vital work with women worldwide.</p>
-                        </font>
-                    </div>
-                    
-                </div>
-				
-                
-				<div class="col-lg-12 col-sm-12 pb-80 header-text" style="padding-bottom:10px">
-                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrvlJqCTjpYB2WiTol8WNE6Ju4TTVkuXosWlT6PkWvfLSZg/viewform?embedded=true" target="_blank"> <input type="submit" value="Join us" class="join-button" style="cursor: pointer;"/> </a>
-                    
-                </div>
-                    
-                
-            </div>
-        </div>
-    </section>
-	
+        
+      <!-- END Introduction Menu -->
+      </div>
+      
+      <!-- END GRID -->
+      </div>
+      
+      <!-- END w3-content -->
+      </div>
+    </div>
+</section>
     <footer class="footer-area">
         <div class="container">
             <div class="row text-left disclaimer d-none d-sm-block">
@@ -983,7 +724,12 @@
             </div>
             <div class="row text-center text-xs-center text-sm-left text-md-left" id="contact">
                 <div class="col-xs-12 col-sm-6">
-                    <h4 class="font-weight-bold light">Contact Us</h4><br><address><i class="material-icons">place</i>Tura Mandi Chowk, Najafagarh, New Delhi-110043</address> <address><a href="mailto:sudakshngo@gmail.com" class="text-light"><i class="material-icons">mail</i>sudakshngo@gmail.com</a></address>                    <address><a href="tel:+919210818788" class="text-light"><i class="material-icons">local_phone</i>+91 9210818788</a>, <a href="tel:+918802321777" class="text-light">+91 8802321777</a></address> </div>
+                    <h4 class="font-weight-bold light">Contact Us</h4><br><address><i class="material-icons">place</i>Tura Mandi Chowk, Najafagarh, New Delhi-110043</address> <address><a href="mailto:sudakshngo@gmail.com" class="text-light"><i class="material-icons">mail</i>sudakshngo@gmail.com</a></address>                    <address><a href="tel:+919210818788" class="text-light"><i class="material-icons">local_phone</i>+91 9210818788</a>, <a href="tel:+918802321777" class="text-light">+91 8802321777</a></address> <div class="scial_icon">
+                        <ul>
+                            <li><span> <ul><a href="https://m.facebook.com/profile.php?id=136378083692647&ref=content_filter" class="fa fa-facebook" title="Facebook" target="_blank"></a> <a href="https://instagram.com/sudakshdenayipehchan?igshid=1gcspwxb98kv0" class="fa fa-instagram" title="Instagram" target="_blank"></a> <a href="https://twitter.com/SudakshN" class="fa fa-twitter" title="Twitter" target="_blank"></a> <a href="https://www.linkedin.com/company/sudaksh" class="fa fa-linkedin" title="Linkedin" target="_blank"></a> <a href="#contact" class="fa fa-phone" title="Contact us"></a></ul> </span></a>
+                            </li>
+                        </ul>
+                    </div></div>
                 <div class="col-xs-12 col-sm-6">
                     <h4 class="font-weight-bold light">Write Us</h4><br>
                     <script type="text/javascript">
@@ -1086,5 +832,3 @@
 </body>
 
 </html>
-
-
