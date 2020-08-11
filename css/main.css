@@ -2647,7 +2647,9 @@ nav a:hover {
 .footer-social a i:hover {
   color: #f41665
 }
-
+.social_icon a{
+  color: rgb(247, 243, 243);
+}
 .footer-text a,
 .footer-text i {
   color: #f41665
