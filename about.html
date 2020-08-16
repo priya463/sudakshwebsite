@@ -259,7 +259,23 @@
         body {
             margin: 0
         }
-	     body{
+	    .row{
+            animation: transitionIn 2s ease-in;
+            animation-duration: 1s;
+            
+            animation-fill-mode: forwards;
+        }
+        @keyframes transitionIn{
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .carousel-item{
             animation: transitionIn 2s ease-in;
             animation-duration: 1s;
             
