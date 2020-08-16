@@ -283,6 +283,22 @@
                 transform: translateY(0);
             }
         }
+	    .default-header{
+            animation: transitionIn 1s ease-in;
+            animation-duration: 1000ms;
+            
+            animation-fill-mode: forwards;
+        }
+        @keyframes transitionIn{
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         .jumbotron{
             animation: transitionIn 2s ease-in;
             animation-duration: 1s;
