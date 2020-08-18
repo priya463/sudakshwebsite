@@ -295,22 +295,7 @@
             }
         }
         
-        .carousel-item{
-            animation: transitionIn 2s ease-in;
-            animation-duration: 1s;
-            
-            
-        }
-        @keyframes transitionIn{
-            from {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        
         .footer-area{
             animation: transitionIn 2s ease-in;
             animation-duration: 1s;
@@ -624,7 +609,7 @@
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             
-          <div class="carousel-item active" data-interval="1000">
+          <div style="transition: transform 2s;animation:transitionIn 2s ease-in;" class="carousel-item active" data-interval="1000">
                <img src="img/carousel/9.jpg" class="d-block w-100" alt="...">
                <div class="carousel-caption d-none d-md-block">
                 
