@@ -307,22 +307,7 @@
                 transform: translateY(0);
             }
         }
-        .carousel-item{
-            animation: transitionIn 2s ease-in;
-            animation-duration: 1s;
-            
-            
-        }
-        @keyframes transitionIn{
-            from {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        
 	    
         .donatebutton{
             border: black;background: maroon;color: white;border-style: hidden;border-radius: 10px 10px;padding: 6px 13px 8px 13px;transform: rotate(90deg);right:-42px; position: fixed;font-size: 15px;z-index: 1000;
@@ -579,7 +564,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         
         <div class="carousel-inner carousel-fade">
-          <div class="carousel-item active">
+          <div style="transition: transform 2s;animation:transitionIn 2s ease-in;" class="carousel-item active">
             <img style="transition: transform 2s;margin-bottom: 0px;" class="bd-placeholder-img" width="100%" height="40%" src="img/16 (1).jpg" alt="" class="src">
             <div class="container">
             </div>
